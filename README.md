@@ -1,6 +1,6 @@
 # tokyo-dev-map
 A map for dev events and available spaces in Tokyo.
-![Project Image](img/project.png)
+![Project Image](src/draft.png)
 
 ### Link to the Project
 * [Live Project](https://github.com/theyij/tokyo-dev-map/) 
