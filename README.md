@@ -1,68 +1,49 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# tokyo-dev-map
+A map for working spaces in Tokyo. 
+[live project](https://github.com/facebook/create-react-app)
 
-## Available Scripts
+## Contributors
 
-In the project directory, you can run:
+Bryenne -
 
-### `yarn start`
+IJen -
 
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+## Project Goal
+- Use google map API with React.js
 
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
+- Add extra information, wifi, plug, price range, etc. on every location.
 
-### `yarn test`
+- Manual location input
 
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- User login, add, edit & delete route
 
-### `yarn build`
+- Input location from API (meetup, etc.)
 
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Tech Stack
+- React
 
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
+- Node.js
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+- google API
 
-### `yarn eject`
+- ES6
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+- Auth
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+- SQLite3
 
-Instead, it will copy all the configuration files and the transitive dependencies (Webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+- sass
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+## Reference
 
-## Learn More
+[Pizza-Streat-Full-Website](https://github.com/Rogulik/Pizza-Streat-Full-Website/blob/master/src/locationsPage/components/GoogleMap.js)
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+[MAIN EXAMPLE](http://google-map-react.github.io/google-map-react/map/main/)
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+[with google-maps-react](https://codesandbox.io/s/eloquent-cori-jp0l4?fontsize=14&hidenavigation=1&theme=dark)
 
-### Code Splitting
+[with google-map-react](https://www.npmjs.com/package/google-map-react)
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
+[How to use the Google Maps API with React.js](https://dev.to/jessicabetts/how-to-use-google-maps-api-and-react-js-26c2)
 
-### Analyzing the Bundle Size
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
-
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `yarn build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+[google-maps-services-js](https://github.com/googlemaps/google-maps-services-js)
