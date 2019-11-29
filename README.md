@@ -14,6 +14,7 @@ IJen -
 * Use google map API with React.js
 * Add extra information, wifi, plug, price range, etc. on every location.
 * Manual location input
+* User login, add, edit & delete route
 * Input location from API (meetup, etc.)
 
 ## Solution
@@ -27,6 +28,7 @@ This project can now ___ , which provides ___ .
 * Node.js
 * google API
 * ES6
+* Auth
 * sass
 
 ## Reference 
