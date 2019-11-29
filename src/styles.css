@@ -1,0 +1,46 @@
+h1 {
+    margin: 0;
+}
+
+h2 {
+    margin: 0;
+}
+
+.page {
+    margin: 0 auto;
+    width: 100%;
+    border: 1px solid red;
+    text-align: center;
+    justify-content: center;
+    padding: 0;
+}
+
+.header {
+    background-color: #F6C555;
+    width: auto;
+    height: 10vh;
+}
+
+.side {
+    float: left;
+    width: 30%;
+}
+
+.input {
+    background-color: #FAD689;
+    height: 20vh;
+    width: auto;
+}
+
+.list {
+    width: auto;
+    background-color: #DCB879;
+    height: 70vh;
+}
+
+.map {
+    background-color: #DAC9A6;
+    height: 90vh;
+    float: right;
+    width: 70%;
+}
