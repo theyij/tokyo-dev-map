@@ -29,6 +29,7 @@ This project can now ___ , which provides ___ .
 * google API
 * ES6
 * Auth
+* SQLite3
 * sass
 
 ## Reference 
