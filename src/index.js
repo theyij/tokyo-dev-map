@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import App from './App';
+// import App from './App';
 import * as serviceWorker from './serviceWorker';
 
 
@@ -12,7 +12,8 @@ function header() {
     const header = (
     <div class="header">
         <h1>Tokyo coffe map - with wifi & plug.</h1>
-        <a href="https://github.com/theyij/tokyo-dev-map" target="_blank"><p>github</p></a>
+        <a href="https://github.com/theyij/tokyo-dev-map" rel="noopener
+ noreferrer"　target="_blank"><p>github</p></a>
     </div>);
     ReactDOM.render(header, document.getElementById('header'));
 }
@@ -57,6 +58,10 @@ header();
 input();
 list();
 map();
+
+
+const PORT = process.env.PORT || 3000;
+app.listen(PORT, () => console.log(`Server is listening on port ${PORT}...`));
 
 // If you want your app to work offline and load faster, you can change
 // unregister() to register() below. Note this comes with some pitfalls.
