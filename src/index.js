@@ -49,7 +49,7 @@ function list() {
 function map() {
     const map = (
     <div class="map">
-        <h2>google map is here</h2>
+        <h2>google map API</h2>
     </div>);
     ReactDOM.render(map, document.getElementById('map'));
 }
