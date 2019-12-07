@@ -5,7 +5,6 @@ import App from './App';
 import * as serviceWorker from './serviceWorker';
 
 
-
 // ReactDOM.render(<App/>, document.getElementById('root'));
 
 function header() {
@@ -59,9 +58,9 @@ input();
 list();
 map();
 
-
-const PORT = process.env.PORT || 3000;
-app.listen(PORT, () => console.log(`Server is listening on port ${PORT}...`));
+//
+// const PORT = process.env.PORT || 3000;
+// app.listen(PORT, () => console.log(`Server is listening on port ${PORT}...`));
 
 // If you want your app to work offline and load faster, you can change
 // unregister() to register() below. Note this comes with some pitfalls.
