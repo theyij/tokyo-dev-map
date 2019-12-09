@@ -3,6 +3,7 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
+import SimpleMap from './components/map/google-map.js';
 
 
 // ReactDOM.render(<App/>, document.getElementById('root'));
@@ -49,7 +50,8 @@ function list() {
 function map() {
     const map = (
     <div class="map">
-        <h2>google map API</h2>
+        <SimpleMap />
+
     </div>);
     ReactDOM.render(map, document.getElementById('map'));
 }
