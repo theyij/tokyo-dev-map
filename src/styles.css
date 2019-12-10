@@ -1,9 +1,12 @@
 h1 {
-    margin: 0;
+  margin: 0;
 }
 
-h2 {
-    margin: 0;
+h2, h3 {
+    margin: 5px;
+    width: auto;
+    text-decoration: underline;
+    text-transform: uppercase;
 }
 
 .page {
@@ -25,16 +28,28 @@ h2 {
     width: 30%;
 }
 
-.input {
-    background-color: #FAD689;
-    height: 20vh;
+.search {
+    background-color: #DCB879;
+    height: 10vh;
     width: auto;
+    padding: 10px;
+
 }
 
-.list {
+.input {
+    background-color: #FAD689;
+    height: 30vh;
+    width: auto;
+    padding: 10px;
+
+}
+
+.output {
     width: auto;
     background-color: #DCB879;
-    height: 70vh;
+    height: 50vh;
+    padding: 10px;
+
 }
 
 .map {
@@ -43,6 +58,21 @@ h2 {
     float: right;
     width: 70%;
 }
+ul{
+  padding: 0;
+}
+.locations{
+  width: auto;
+  padding: 3px 20px;
+  background-color: rgba(255,255,255,0.4);
+  color: #323232;
+  list-style-type: none;
+  font-size: 20px;
+  text-align: left;
+  margin: 5px 0;
+}
+
+
 .marker{
   margin: 0 auto;
   width: 300px;

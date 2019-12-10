@@ -6,7 +6,7 @@ import {API_KEY} from './apiKey.js';
 const HardCodePoints = ({info}) => (<div class='marker'>
     <span class="pin"></span>
     <ul class="information">
-      <li>{info[0]}</li>
+      <h3>{info[0]}</h3>
       <li>Type : {info[1]}</li>
       <li>Distance : {info[2]}</li>
       <li>Free wifi : {info[3]}</li>
