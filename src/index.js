@@ -5,6 +5,7 @@ import App from './App.js';
 import * as serviceWorker from './serviceWorker';
 import SimpleMap from './components/map/google-map.js';
 import Input from './components/input/input.js';
+import Component from './components/map/autocomplete.js';
 import { BrowserRouter, Route, Link } from 'react-router-dom';
 import ProfilePages from './components/profile/profile.js';
 
