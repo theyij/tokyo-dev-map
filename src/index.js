@@ -1,12 +1,58 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import App from './App';
+import App from './App.js';
 import * as serviceWorker from './serviceWorker';
 import SimpleMap from './components/map/google-map.js';
+import { BrowserRouter } from 'react-router-dom'
+import { Route, Link } from 'react-router-dom'
 
+const BaseLayout = () => (
+  <div className="base">
+    <header>
+      <p>React Router v4 Browser Example</p>
+        <nav>
+          <ul>
+            <li><Link to='/'>Home</Link></li>
+            <li><Link to='/about'>About</Link></li>
+            <li><Link to='/me'>Profile</Link></li>
+            <li><Link to='/login'>Login</Link></li>
+            <li><Link to='/register'>Register</Link></li>
+            <li><Link to='/contact'>Contact</Link></li>
 
-// ReactDOM.render(<App/>, document.getElementById('root'));
+          </ul>
+        </nav>
+    </header>
+    <div className="container">
+      <Route path="/" exact component={HomePage} />
+      <Route path="/login" component={LoginPage} />
+      <Route path="/signup" component="{SignupPage}" />
+      <Route path="/add" component="{AddPage}" />
+      <Route path="/edit" component="{EditPage}" />
+      <Route path="/delete" component="{DeletePage}" />
+      <Route path="/me" component={ProfilePage} />
+    </div>
+    <footer>
+        React Router v4 Browser Example (c) 2017
+    </footer>
+  </div>
+)
+
+const HomePage = () => <div>This is a Home Page</div>
+const LoginPage = () => <div>This is a Login Page</div>
+const SignupPage = () => <div>This is a Signup Page</div>
+const ProfilePage = () => <div>This is the Profile Page</div>
+const AddPage = () => <div>This is an Add Page</div>
+const EditPage = () => <div>This is a Edit Page</div>
+const DeletePage = () => <div>This is a Delete Page</div>
+
+const App = () => (
+  <BrowserRouter>
+    <BaseLayout />
+  </BrowserRouter>
+)
+render(<App />, document.getElementById('root'))
+
 
 function header() {
     const header = (
@@ -68,3 +114,4 @@ map();
 // unregister() to register() below. Note this comes with some pitfalls.
 // Learn more about service workers: https://bit.ly/CRA-PWA
 serviceWorker.unregister();
+export default App
