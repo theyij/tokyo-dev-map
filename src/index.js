@@ -14,15 +14,16 @@ const BaseLayout = () => (
         <nav>
           <ul>
             <li><Link to='/'>Home</Link></li>
-            <li><Link to='/about'>About</Link></li>
             <li><Link to='/me'>Profile</Link></li>
             <li><Link to='/login'>Login</Link></li>
-            <li><Link to='/register'>Register</Link></li>
-            <li><Link to='/contact'>Contact</Link></li>
-
+            <li><Link to='/signup'>Signup</Link></li>
+            <li><Link to='/add'>Add</Link></li>
+            <li><Link to='/edit'>Edit</Link></li>
+            <li><Link to='/delete'>Delete</Link></li>
           </ul>
         </nav>
     </header>
+
     <div className="container">
       <Route path="/" exact component={HomePage} />
       <Route path="/login" component={LoginPage} />
@@ -46,13 +47,14 @@ const AddPage = () => <div>This is an Add Page</div>
 const EditPage = () => <div>This is a Edit Page</div>
 const DeletePage = () => <div>This is a Delete Page</div>
 
-const App = () => (
-  <BrowserRouter>
-    <BaseLayout />
-  </BrowserRouter>
-)
-render(<App />, document.getElementById('root'))
 
+class Appi extends React.Component {
+  render() {
+    return <BrowserRouter>
+      <BaseLayout />
+    </BrowserRouter>;
+  }
+}
 
 function header() {
     const header = (
@@ -114,4 +116,4 @@ map();
 // unregister() to register() below. Note this comes with some pitfalls.
 // Learn more about service workers: https://bit.ly/CRA-PWA
 serviceWorker.unregister();
-export default App
+export default Appi;
