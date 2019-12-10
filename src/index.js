@@ -1,12 +1,13 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import App from './App';
+import App from './App.js';
 import * as serviceWorker from './serviceWorker';
 import SimpleMap from './components/map/google-map.js';
 import Input from './components/input/input.js';
+import { BrowserRouter, Route, Link } from 'react-router-dom';
+import ProfilePages from './components/profile/profile.js';
 
-// ReactDOM.render(<App/>, document.getElementById('root'));
 
 function header() {
     const header = (<div class="header">
@@ -23,6 +24,9 @@ function side() {
       <Input/>
     );
     ReactDOM.render(side, document.getElementById('side'));
+
+
+
 }
 
 function map() {
@@ -44,3 +48,4 @@ map();
 // unregister() to register() below. Note this comes with some pitfalls.
 // Learn more about service workers: https://bit.ly/CRA-PWA
 serviceWorker.unregister();
+
