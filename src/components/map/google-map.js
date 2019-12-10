@@ -5,8 +5,8 @@ import { API_KEY } from './apiKey.js';
 class SimpleMap extends Component {
   static defaultProps = {
     center: {
-      lat: 60.95,
-      lng: 30.33
+      lat: 35.6762,
+      lng: 139.6503
     },
     zoom: 11
   };
