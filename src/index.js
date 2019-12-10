@@ -31,7 +31,7 @@ const BaseLayout = () => (
       <Route path="/add" component="{AddPage}" />
       <Route path="/edit" component="{EditPage}" />
       <Route path="/delete" component="{DeletePage}" />
-      <Route path="/profile" component="{ProfilePages}" />
+      <Route path="./profile" component="{ProfilePages}" />
     </div>
     <footer>
         React Router v4 Browser Example (c) 2017
@@ -48,12 +48,6 @@ const EditPage = () => <div>This is a Edit Page</div>
 const DeletePage = () => <div>This is a Delete Page</div>
 
 
-const App = () => (
-  <BrowserRouter>
-    <BaseLayout />
-  </BrowserRouter>
-)
-render(<App />, document.getElementById('root'))
 
 function header() {
     const header = (
@@ -116,4 +110,3 @@ BaseLayout();
 // unregister() to register() below. Note this comes with some pitfalls.
 // Learn more about service workers: https://bit.ly/CRA-PWA
 serviceWorker.unregister();
-export default App;
