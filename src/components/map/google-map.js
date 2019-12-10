@@ -3,8 +3,16 @@ import GoogleMapReact from 'google-map-react';
 import {API_KEY} from './apiKey.js';
 
 // shop i
-const HardCodePoints = ({shopName}) => (<div class='pin'>
-    <p>{shopName}</p>
+const HardCodePoints = ({info}) => (<div class='marker'>
+    <span class="pin"></span>
+    <ul class="information">
+      <li>{info[0]}</li>
+      <li>Type : {info[1]}</li>
+      <li>Distance : {info[2]}</li>
+      <li>Free wifi : {info[3]}</li>
+      <li>Plug : {info[4]}</li>
+      <li>Price : ¥{info[5]}</li>
+    </ul>
 </div>);
 
 class SimpleMap extends Component {
@@ -25,9 +33,16 @@ class SimpleMap extends Component {
                 {
                     lat: 35.663502,
                     lng: 139.704171,
-                    name: "Streamer Coffee Company",
+                    info: [
+                      "Streamer Coffee Company",
+                      "Cafe",
+                      "8 mins",
+                      "yes",
+                      "yes",
+                      "600~"
+                    ]
+
                     // info: {
-                    //   type: "Cafe",
                     //   distant: "10",
                     //   plug: "yes",
                     //   wifi: "yes",
@@ -36,8 +51,15 @@ class SimpleMap extends Component {
                 }, {
                     lat: 35.659683,
                     lng: 139.701509,
-                    name: "Cafe x Lounge MICROCOSMOS",
-                    type: "Restaruant"
+                    info: [
+                      "Cafe x Lounge MICROCOSMOS",
+                      "Restaurant",
+                      "3 mins",
+                      "yes",
+                      "yes",
+                      "900~"
+                    ]
+                    // type: "Restaruant"
                 }
             ]
         };
@@ -50,18 +72,10 @@ class SimpleMap extends Component {
                 lat={cafe.lat}
                 lng={cafe.lng}
                 key={index}
-                shopName={cafe.name}
+                info={cafe.info}
                 id={"1"}/>);
-             // onClick={() => console.log("You clicked me!")} />
         });
     };
-
-
-
-
-
-
-
 
     //Google map rendered
     render() {
