@@ -15,7 +15,7 @@ const BaseLayout = () => (
         <nav>
           <ul>
             <li><Link to='/'>Home</Link></li>
-            <li><Link to='/profile'>Profile</Link></li>
+            <li><Link to='/components/profile'>Profile</Link></li>
             <li><Link to='/login'>Login</Link></li>
             <li><Link to='/signup'>Signup</Link></li>
             <li><Link to='/add'>Add</Link></li>
@@ -32,7 +32,7 @@ const BaseLayout = () => (
       <Route path="/add" component="{AddPage}" />
       <Route path="/edit" component="{EditPage}" />
       <Route path="/delete" component="{DeletePage}" />
-      <Route path=".components/profile" component={ProfilePage} />
+      <Route path="./components/profile" component={ProfilePages} />
     </div>
     <footer>
         React Router v4 Browser Example (c) 2017
@@ -108,7 +108,7 @@ header();
 input();
 list();
 map();
-
+BaseLayout();
 
 //
 // const PORT = process.env.PORT || 3000;
