@@ -1,5 +1,7 @@
 # tokyo-dev-map
 A map for working spaces in Tokyo. 
+![Project Image](img/map.png)
+
 [live project](https://github.com/facebook/create-react-app)
 
 ## Contributors
