@@ -6,9 +6,11 @@ import 'react-google-places-autocomplete/dist/assets/index.css';
 const Component = () => (
   <div>
     <GooglePlacesAutocomplete
-      onSelect={console.log}
+       componentRestrictions: {
+        country: ['jp'],
     />
   </div>
 );
+
 
 export default Component;
