@@ -2,46 +2,18 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App.js';
+import Header from './components/Header/header.js';
+import Add from './components/Add/add.js';
+import SimpleMap from './components/Map/map.js';
+import Side from './components/Side/side.js';
+import Input from './components/Input/input.js';
 import * as serviceWorker from './serviceWorker';
-import SimpleMap from './components/map/google-map.js';
-import Input from './components/input/input.js';
 // import Component from './components/map/autocomplete.js';
 import { BrowserRouter, Route, Link } from 'react-router-dom';
 import ProfilePages from './components/profile/profile.js';
 
 
-function header() {
-    const header = (<div class="header">
-        <h1>Tokyo coffe map - with wifi & plug.</h1>
-        <a href="https://github.com/theyij/tokyo-dev-map" rel="noopener
- noreferrer" target="_blank">
-            <p>github</p>
-        </a>
-    </div>);
-    ReactDOM.render(header, document.getElementById('header'));
-}
-function side() {
-    const side = (
-      <Input/>
-    );
-    ReactDOM.render(side, document.getElementById('side'));
 
-
-
-}
-
-function map() {
-    const map = (<div class="map">
-        <SimpleMap/>
-
-    </div>);
-    ReactDOM.render(map, document.getElementById('map'));
-}
-header();
-side();
-map();
-
-//
 // const PORT = process.env.PORT || 3000;
 // app.listen(PORT, () => console.log(`Server is listening on port ${PORT}...`));
 
