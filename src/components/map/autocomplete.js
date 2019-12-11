@@ -8,6 +8,11 @@ const Component = () => (
     <GooglePlacesAutocomplete
        componentRestrictions: {
         country: ['jp'],
+        // bounds: [
+        // { lat: 50, lng: 50 },
+        // { lat: 100, lng: 100 }
+        // ],
+      }
     />
   </div>
 );
