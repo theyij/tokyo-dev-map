@@ -2,20 +2,17 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App.js';
-import Header from './Header/header.js';
-import Add from './Add/add.js';
-import Map from './Map/map.js';
-import Side from './Side/side.js';
-import Input from './components/input/input.js';
-import SimpleMap from './components/map/google-map.js';
+import Header from './components/Header/header.js';
+import Add from './components/Add/add.js';
+import SimpleMap from './components/Map/map.js';
+import Side from './components/Side/side.js';
+import Input from './components/Input/input.js';
 import * as serviceWorker from './serviceWorker';
 // import Component from './components/map/autocomplete.js';
 import { BrowserRouter, Route, Link } from 'react-router-dom';
 import ProfilePages from './components/profile/profile.js';
 
-<Header />
-<Side />
-<Map />
+
 
 // const PORT = process.env.PORT || 3000;
 // app.listen(PORT, () => console.log(`Server is listening on port ${PORT}...`));
