@@ -7,6 +7,7 @@ import Header from './components/Header/header.js';
 import Side from './components/Side/side.js';
 import Map from './components/Map/map.js';
 
+
 const BaseLayout = () => (
   <div className="base">
     <Header />
