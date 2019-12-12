@@ -6,11 +6,11 @@ import Header from './components/Header/header.js';
 import Add from './components/Add/add.js';
 import SimpleMap from './components/Map/map.js';
 import Side from './components/Side/side.js';
-import Input from './components/Input/input.js';
+import Input from './components/Side/input.js';
 import * as serviceWorker from './serviceWorker';
 // import Component from './components/map/autocomplete.js';
 import { BrowserRouter, Route, Link } from 'react-router-dom';
-import ProfilePages from './components/profile/profile.js';
+import ProfilePages from './components/Profile/profile.js';
 
 
 
