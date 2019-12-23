@@ -5,7 +5,7 @@ import './App.css';
 import { BrowserRouter, Route, Link } from 'react-router-dom';
 import Header from './components/Header/header.js';
 import Side from './components/Side/side.js';
-import Map from './components/Map/map.js';
+import Map from './components/map/map.js';
 
 
 const BaseLayout = () => (

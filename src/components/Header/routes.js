@@ -1,7 +1,7 @@
 import React from 'react';
 import { BrowserRouter, Route, Link, Switch } from 'react-router-dom';
 import './routes.css';
-import Add from '../Add/add.js';
+import Add from '../add/add.js';
 
 const HomePage = () => <div>This is a Home Page</div>
 const ProfilePage = () => <div>This is the Profile Page</div>
@@ -36,5 +36,3 @@ export default function Routes() {
     </div>
   );
 }
-
-
