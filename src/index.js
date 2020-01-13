@@ -1,7 +1,11 @@
+import React from 'react';
+import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App.js';
 import * as serviceWorker from './serviceWorker';
 // import Component from './components/map/autocomplete.js';
+
+ReactDOM.render(<App />, document.getElementById('root'));
 
 // const PORT = process.env.PORT || 3000;
 // app.listen(PORT, () => console.log(`Server is listening on port ${PORT}...`));
